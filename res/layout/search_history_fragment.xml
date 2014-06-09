@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+
+    <ListView
+            android:layout_height = "fill_parent"
+            android:layout_width = "fill_parent"
+            android:id = "@+id/historyList"
+            android:divider = "#FFFFFF"
+            android:dividerHeight="1dip"
+            android:cacheColorHint="#000000">
+    </ListView>
+
+    <TextView
+            android:id="@+id/empty"
+            android:text="empty_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+    />
+
+</LinearLayout>

@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:background="@drawable/writebackground"
+    tools:context="kr.ac.kumoh.ce.mobile.MainActivity$PlaceholderFragment" >
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="76dp"
+        android:text="일시" />
+
+    <ImageButton
+        android:id="@+id/calendarBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="70dp"
+        android:layout_toRightOf="@+id/textView1"
+        android:background="@drawable/icon_calendar"
+        android:src="@drawable/icon_calendar"
+        android:onClick="showTimePickerDialog" />
+
+    <EditText
+        android:id="@+id/etDate"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/calendarBtn"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etDate"
+        android:layout_marginTop="16dp"
+        android:text="시간" />
+
+    <ImageButton
+        android:id="@+id/clockBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/calendarBtn"
+        android:layout_alignTop="@+id/textView2"
+        android:background="@drawable/clock"
+        android:src="@drawable/clock" />
+    
+    <EditText
+        android:id="@+id/etTime"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView1"
+        android:layout_below="@+id/clockBtn"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+    
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/etTime"
+        android:layout_marginTop="16dp"
+        android:text="장소" />
+
+    <ImageButton
+        android:id="@+id/placeBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clockBtn"
+        android:layout_alignTop="@+id/textView3"
+        android:background="@drawable/icon_pin_alt"
+        android:src="@drawable/icon_pin_alt" />
+    
+    <EditText
+        android:id="@+id/etPlace"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_below="@+id/placeBtn"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/canclebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/savebtn"
+        android:layout_alignBottom="@+id/savebtn"
+        android:layout_alignRight="@+id/etPlace"
+        android:text="cancle" />
+
+    <Button
+        android:id="@+id/savebtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/etPlace"
+        android:layout_below="@+id/etPlace"
+        android:layout_marginTop="17dp"
+        android:text="save" />
+   
+</RelativeLayout>

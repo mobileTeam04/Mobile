@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent">
+    <TextView
+            android:id="@+id/entry_search_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="20dip"/>
+    <TextView
+            android:id="@+id/entry_description"
+            android:layout_below="@id/entry_search_string"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="italic"/>
+
+    <Button
+            android:id="@+id/deleteItemButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="deleteSearchHistory"
+            android:layout_below="@id/entry_description"/>
+
+    <Button
+            android:id="@+id/shareViaEmailButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shareViaEmail"
+            android:layout_below="@id/entry_description"
+            android:layout_toRightOf="@id/deleteItemButton"/>
+
+    <Button
+            android:id="@+id/shareViaSMSButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="shareViaSMS"
+            android:layout_below="@id/entry_description"
+            android:layout_toRightOf="@id/shareViaEmailButton"/>
+
+</RelativeLayout>
